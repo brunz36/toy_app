@@ -13,7 +13,8 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
 
   validates :password,  presence: true,
-                        length: { in: 6..20 }
+                        length: { in: 6..20 },
+                        allow_nil: true
 
   def self.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
