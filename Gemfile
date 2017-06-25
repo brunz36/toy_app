@@ -51,6 +51,7 @@ gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
 
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2'
+gem 'faker', '~> 1.7', '>= 1.7.3'
 
 group :development do
   gem 'awesome_print'
