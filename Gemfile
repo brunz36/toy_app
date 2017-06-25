@@ -6,7 +6,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.3'
 # Use postgresql as the database for Active Record
@@ -18,13 +17,11 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -52,6 +49,9 @@ gem 'bootstrap-generators', git: 'https://github.com/gstark/bootstrap-generators
 gem 'bootstrap-social-rails'
 gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
+
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2'
+
 group :development do
   gem 'awesome_print'
   gem 'dotenv-rails'
